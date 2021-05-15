@@ -71,5 +71,12 @@ public class FilmeController {
     public void delete(@PathVariable("id") Integer id){
         filmeDao.delete(id);
     }
+    
+    @GetMapping("/filme/em-cartaz")
+    public ModelAndView emCartas() {
+    	ModelAndView modelAndView = new ModelAndView("filme/em-cartaz");
+    	modelAndView.addObject("filmes", filmeDao.findAll());
+    	return modelAndView;
+    }
 
 }
