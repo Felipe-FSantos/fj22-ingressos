@@ -9,23 +9,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.time.Duration;
-
-/**
- * Created by nando on 03/03/17.
- */
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.time.Duration;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
 /**
  * Created by nando on 03/03/17.
  */
@@ -95,4 +78,3 @@ public class Filme {
 		this.preco = preco;
 	}
 }
-

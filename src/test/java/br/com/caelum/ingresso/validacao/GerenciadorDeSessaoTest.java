@@ -1,6 +1,5 @@
 package br.com.caelum.ingresso.validacao;
 
-
 import java.math.BigDecimal;
 import java.time.Duration;
 import java.time.LocalTime;
@@ -75,4 +74,8 @@ public class GerenciadorDeSessaoTest {
 		
 		Assert.assertFalse(gerenciador.cabe(sessaoQueTerminaAmanha));
 	}
+
 }
+
+
+

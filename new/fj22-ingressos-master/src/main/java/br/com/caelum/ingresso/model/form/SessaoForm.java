@@ -1,8 +1,6 @@
 package br.com.caelum.ingresso.model.form;
 
-import java.math.BigDecimal;
 import java.time.LocalTime;
-import java.util.HashSet;
 
 import javax.validation.constraints.NotNull;
 
@@ -33,8 +31,6 @@ public class SessaoForm {
 		
 		return new Sessao(horario, filme, sala);
 	}
-	
-
 
 	public Integer getSalaId() {
 		return salaId;

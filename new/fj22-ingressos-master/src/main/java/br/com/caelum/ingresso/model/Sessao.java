@@ -26,17 +26,14 @@ public class Sessao {
 	private Filme filme;
 	
 	private BigDecimal preco;
-
+	
 	public Sessao() {}
 	
 	public Sessao(LocalTime horario, Filme filme, Sala sala) {
 		this.horario = horario;
 		this.filme = filme;
 		this.sala = sala;
-
-		this.preco = sala.getPreco().add(filme.getPreco());
 		this.setPreco(sala.getPreco().add(filme.getPreco()));
-
 	}
 
 	public Integer getId() {
@@ -78,5 +75,4 @@ public class Sessao {
 	public void setPreco(BigDecimal preco) {
 		this.preco = preco;
 	}
-
 }
