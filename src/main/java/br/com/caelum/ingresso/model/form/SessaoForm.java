@@ -1,6 +1,8 @@
 package br.com.caelum.ingresso.model.form;
 
+import java.math.BigDecimal;
 import java.time.LocalTime;
+import java.util.HashSet;
 
 import javax.validation.constraints.NotNull;
 
@@ -24,6 +26,7 @@ public class SessaoForm {
 	@NotNull
 	private Integer filmeId;
 	
+	
 	public Sessao toSessao(SalaDao salaDao, FilmeDao filmeDao) {
 		Filme filme = filmeDao.findOne(filmeId);
 		Sala sala = salaDao.findOne(salaId);
@@ -32,6 +35,8 @@ public class SessaoForm {
 		
 		return sessao;
 	}
+	
+
 
 	public Integer getSalaId() {
 		return salaId;
